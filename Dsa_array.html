@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>DSA with Javascript</title>
+
+    </head>
+    <body>
+        <h1>Traversing and Accessing with text  Input and Button</h1>
+        <input type="text" id="dataElement" />
+        <button onclick="getData()">Access Data</button><br/><hr  />
+    </body>
+    <script>
+        const array_traversing = [12,23,24,34,45,56,67,78,89,90]
+        for (let i = 0; i < array_traversing.length; i++) {
+            document.write(`the array ${i} is ${array_traversing[i]} <br />` )
+        }
+    </script><hr />
+    <script>
+        const array_accessing= [12,23,24,34,45,56,67,78,89,90]
+
+        const getData = () =>{
+            const elementData = document.getElementById("dataElement").value
+            if (elementData < array_traversing.length) {
+                console.log(array_accessing[elementData])
+            } else {
+              alert("Please Enter Your Valid Address")  
+            }
+        }
+    </script>
+</html>
